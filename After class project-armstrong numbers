@@ -3,9 +3,10 @@ length=len(str(armstrong))
 sum=0
 temp=armstrong
 
-while temp!=0:
+while temp>0:
     digit=temp%10
     sum+=digit**length
+    temp//=10
 
 if armstrong==sum:
     print(armstrong, "is an armstrong number")
